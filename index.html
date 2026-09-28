@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiesta de la Primavera - Liceo Nº 3</title>
+
+    <style>
+        /* ---------- RESET BÁSICO ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background-color: #f4f9f4;
+            line-height: 1.6;
+        }
+
+        /* ---------- CABECERA (100% ancho) ---------- */
+        header {
+            background-color: #4a8c3f;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto 0.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: chocolate;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+
+        /* ---------- MENÚ DE NAVEGACIÓN ---------- */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.4rem 1rem;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #4a8c3f;
+        }
+
+        /* ---------- MAIN (80% ancho, centrado) ---------- */
+        main {
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        #inicio p{
+            text-align: center;
+        }
+
+        /* ---------- SECCIONES ---------- */
+        section {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #inicio{
+            background-color: rgb(222, 209, 135);
+        }
+        section h2 {
+            color: #4a8c3f;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #a8d5a2;
+            padding-bottom: 0.4rem;
+        }
+
+        /* ---------- ARTÍCULOS ---------- */
+        article {
+            margin-top: 1rem;
+        }
+
+        article img {
+            width: 100%;
+            max-width: 450px;
+            display: block;
+            margin: 0 auto 1rem;
+            border-radius: 8px;
+        }
+
+        article h3 {
+            color: #2f6b27;
+            margin-bottom: 0.5rem;
+        }
+
+        article a {
+            color: #4a8c3f;
+            font-weight: bold;
+        }
+
+        /* ---------- PIE (100% ancho) ---------- */
+        footer {
+            background-color: #2f6b27;
+            color: #fff;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA: logo + título + menú -->
+    <header>
+        <img src="imagenes/logo.png" alt="Logo del Liceo Nº 3" width="80">
+        <!-- <h1>Fiesta de la Primavera</h1> -->
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#informacion">Información</a>
+        </nav>
+    </header>
+
+    <!-- ZONA CENTRAL -->
+    <main>
+
+        <!-- Sección introductoria -->
+        <section id="inicio">
+            <h1>Bienvenidos a la Fiesta de la Primavera</h1>
+            <p><strong>
+                Como todos los años, el Liceo Nº 3 celebra la primavera
+                con una jornada abierta a toda la comunidad educativa.</p><p>Habrá música,
+                stands, actividades recreativas y muchas sorpresas.
+            </strong></p>
+        </section>
+
+        <!-- Sección de información detallada -->
+        <section id="informacion">
+            <h2>Información</h2>
+
+            <article>
+                <img src="imagenes/primavera.png" alt="Estudiantes celebrando la primavera">
+            </article>
+
+            <article>
+                <h3>¿Cuándo y dónde?</h3>
+                <p>
+                    📅La fiesta se realizará el <strong>18 de septiembre</strong> de
+                    <strong>15:00 a 20:00 hs</strong> en el patio central del liceo.
+                </p>
+                <p>
+                    🆓La entrada es libre y gratuita. Se suspende por lluvia y se
+                    reprograma para el viernes siguiente.
+                </p>
+                <p>
+                    ℹ️Para más detalles, consultar el
+                    <a href="actividades.html">programa de actividades</a>.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Liceo Nº 3 — Fiesta de la Primavera 2026</p>
+        <p>Licencia Creative Commons BY-NC-SA 4.0</p>
+    </footer>
+
+</body>
+</html>
